@@ -738,5 +738,3 @@ def _endpoint_url(endpoint):
     if endpoint:
         url = url_for(endpoint)
     return url
-
-
