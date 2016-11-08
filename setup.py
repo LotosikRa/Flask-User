@@ -10,10 +10,10 @@ from setuptools import setup
 
 setup(
     name='Flask-User',
-    version='0.6.8m3',
+    version='0.6.8m3.0.1',
     url='http://github.com/LotosikRa/Flask-User',
     license='BSD License',
-    author='Illia Ananich',
+    author='Ling Thio (with Illia Ananich contributions)',
     author_email='213n.lotos5@gmail.com',
     description='Customizable User Account Management for Flask: Register, Confirm email, Login, Change username, Change password, Forgot password and more.',
     long_description=__doc__,
