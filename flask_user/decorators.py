@@ -10,6 +10,12 @@ from flask_login import current_user
 from .access import is_authenticated, is_confirmed_email
 
 
+# Here to not break backward compatibility
+def _call_or_get(function_or_property):
+    return function_or_property() if callable(function_or_property) else function_or_property
+
+
+
 def login_required(func):
     """ This decorator ensures that the current user is logged in before calling the actual view.
         Calls the unauthorized_view_function() when the user is not logged in."""
