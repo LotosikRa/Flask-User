@@ -10,7 +10,7 @@ from setuptools import setup
 
 setup(
     name='Flask-User',
-    version='0.6.8m3.0.1',
+    version='0.6.8m3.1.2',
     url='http://github.com/LotosikRa/Flask-User',
     license='BSD License',
     author='Ling Thio (with Illia Ananich contributions)',
