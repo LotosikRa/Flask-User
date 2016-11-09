@@ -5,20 +5,24 @@ language:
   python
 
 python:
-  - "2.6"
   - "2.7"
   - "3.3"
   - "3.4"
+  - "3.5"
 
 branches:
   only:
-    - master
+    - modern
+    - mod
+    - new
+    - /^fix\/.*$/
+    - /^feat\/.*$/
+  except:
+    - /^pr\/.*$/  # for pull-requests
+    - /^trans\/.*$/  # for translations
 
-# Install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
   - pip install -r requirements.txt --quiet
-  - pip install pytest
 
-# Run automated tests
 script:
   - py.test flask_user/tests/
