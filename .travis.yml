@@ -17,9 +17,9 @@ branches:
     - new
     - /^fix\/.*$/
     - /^feat\/.*$/
-    - /^task\/.*$/
   except:
-    - /^pr\/.*$/
+    - /^pr\/.*$/  # for pull-requests
+    - /^trans\/.*$/  # for translations
 
 install:
   - pip install -r requirements.txt --quiet
