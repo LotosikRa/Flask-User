@@ -8,6 +8,11 @@ Flask-User
 
 This fork was created because of original repository updates not so regular.
 
+Warning
+-------
+
+I'm trying to not break backward compatibility, but I have decided to replace PyCrypto with PyCryptodome.
+
 Branches
 --------
 
